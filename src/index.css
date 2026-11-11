@@ -17,9 +17,9 @@
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+  color-scheme: light;
+  color: #4a4458;
+  background: #f7f6fb;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -52,18 +52,19 @@
 
 body {
   margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: min(1126px, 100%);
   margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  text-align: left;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  background: #f7f6fb;
 }
 
 h1,
